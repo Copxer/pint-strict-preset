@@ -11,7 +11,6 @@ Pint's strict preset is an insanely defensive coding style preset for those who 
 ```json
 {
     "preset": "laravel",
-    "notPath": ["app/Http/Controllers/Controller.php"],
     "rules": {
         "array_push": true,
         "backtick_to_shell_exec": true,
