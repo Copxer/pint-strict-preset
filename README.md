@@ -1,6 +1,14 @@
-# pint-strict-preset
+# 🧼 Laravel Pint Code Style Configuration
 
-<pre>
+This project uses **[Laravel Pint](https://laravel.com/docs/pint)** as the PHP code style fixer to maintain clean, consistent, and modern code formatting across the application. Pint is built on top of PHP-CS-Fixer and follows Laravel's opinionated code style guide by default, with additional strict rules applied for enhanced quality and maintainability.
+
+---
+
+## ⚙️ Configuration
+
+The Pint configuration is defined in the root-level `pint.json` file:
+
+```json
 {
     "preset": "laravel",
     "notPath": ["app/Http/Controllers/Controller.php"],
@@ -60,5 +68,3 @@
         "visibility_required": true
     }
 }
-    
-</pre>
