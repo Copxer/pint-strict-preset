@@ -68,3 +68,37 @@ Pint strict preset is an insanely defensive coding style preset for those who de
         "visibility_required": true
     }
 }
+
+## 📌 Notable Customizations
+notPath: Excludes app/Http/Controllers/Controller.php from formatting to avoid final_class rule conflicts.
+
+final_class: Enforces the use of final keyword on classes for immutability unless specifically excluded.
+
+declare_strict_types: Ensures strict typing on all PHP files to avoid type coercion issues.
+
+ordered_class_elements: Enforces consistent structure and ordering of class members for better readability.
+
+mb_str_functions: Uses multibyte-safe string functions to ensure UTF-8 compatibility.
+
+strict_comparison: Enforces the use of === and !== for more reliable comparisons.
+
+Includes several other modern best practices like avoiding unnecessary else blocks and using modern type casting.
+
+## 💡 Auto-Format on Save (VSCode)
+To auto-format PHP files with Pint on every save:
+
+Install the VSCode extension: emeraldwalk.runonsave
+
+Add this to your VSCode settings.json:
+
+```json
+"emeraldwalk.runonsave": {
+    "commands": [
+        {
+            "match": "\\.php$",
+            "cmd": "vendor/bin/pint ${file}"
+        }
+    ]
+}
+```
+This will automatically run Pint on the currently saved PHP file.
