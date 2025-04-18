@@ -6,7 +6,7 @@ This project uses **[Laravel Pint](https://laravel.com/docs/pint)** as the PHP c
 
 ## ⚙️ Configuration
 
-The Pint configuration is defined in the root-level `pint.json` file:
+Pint strict preset is an insanely defensive coding style preset for those who demand meticulous precision in their projects. To use it, simply create a `pint.json` file with the following contents:
 
 ```json
 {
